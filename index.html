@@ -8,6 +8,18 @@
 @supports(animation-timeline:view()){ @media(prefers-reduced-motion:no-preference){.bar{transform-origin:left;animation:bar-sweep linear both;animation-timeline:view();animation-range:entry 0% entry 100%}@keyframes bar-sweep{from{transform:scaleX(.15)}to{transform:scaleX(1)}}}}
 @media(max-width:900px){.hero-content{grid-template-columns:1fr;gap:25px}.hero-art span{padding:12px}.hero-art b{font-size:28px;margin-right:10px}.report-grid{gap:35px}}
 @media(max-width:600px){header{height:80px}.hero{min-height:calc(100svh - 80px)}h1{font-size:58px;letter-spacing:-.075em}.hero-art{height:75px}.hero-art span{font-size:10px;padding:8px;display:block}.hero-art b{display:block;font-size:24px;margin-bottom:5px}.section{padding:55px 0}.report-grid,.process-grid{grid-template-columns:1fr}.report-summary{font-size:110px}.report-grid{gap:35px}.step,.step+.step{border-right:0;border-bottom:1px solid #666;padding:25px 0}.step:last-child{border-bottom:0}.step h3{margin-top:15px}.faq summary{font-size:18px}.brand{font-size:25px}.contact h2{font-size:60px}.report-note{font-size:13px}}
+
+/* Slide motion: content remains visible without JavaScript. */
+@media(prefers-reduced-motion:no-preference){
+ dialog[open]{animation:dialog-slide .36s cubic-bezier(.22,1,.36,1) both}
+ dialog[open]::backdrop{animation:backdrop-in .25s ease both}
+ .button span{display:inline-block;transition:translate .25s ease}
+ .button:hover span{translate:4px -3px}
+ .hero-content{animation:hero-slide .9s cubic-bezier(.22,1,.36,1) both;animation-delay:.1s}
+ @keyframes hero-slide{from{opacity:0;translate:0 35px}to{opacity:1;translate:0 0}}
+ @keyframes dialog-slide{from{opacity:0;translate:0 28px}to{opacity:1;translate:0 0}}
+ @keyframes backdrop-in{from{opacity:0}to{opacity:1}}
+}
 </style></head><body><a class="skip" href="#main">Lewati ke konten</a><header class="wrap"><a href="#" class="brand" aria-label="Beranda portofolio">haikal<i></i></a><nav aria-label="Navigasi utama"><a href="#karya">Karya</a><a href="#tentang">Tentang</a><a href="#kontak" class="nav-contact">Mari ngobrol ↗</a></nav></header><main id="main"><section class="hero wrap" data-enter><div class="eyebrow enter"><span class="dot"></span> Portofolio kreatif / Haikal</div><div class="hero-content enter"><h1>Ide yang baik.<br>Desain yang <em>berarti.</em></h1><div class="intro">Desain visual dan pengalaman digital untuk membantu brand menyampaikan ceritanya.<a class="button" href="#karya">Jelajahi karya <span>↘</span></a></div></div><div class="hero-art" aria-label="Bidang desain"><span><b>01</b> Desain website</span><span><b>02</b> Identitas visual</span><span><b>03</b> Pengalaman digital</span></div><div class="hero-bottom"><span>Desain digital · Identitas visual</span><span>Gulir untuk melihat karya ↓</span></div></section>
 <section class="section report" id="ringkasan"><div class="wrap"><div class="eyebrow">Portofolio / Ringkasan</div><h2 style="margin-top:20px">Karya, dalam angka.</h2><div class="report-grid"><div class="report-summary">04<small>konsep proyek dalam portofolio ini</small></div><div><div class="bar-row"><div class="bar-label"><span>Website</span><span>1 proyek</span></div><div class="bar" style="width:50%" data-value="1">1</div></div><div class="bar-row"><div class="bar-label"><span>Branding</span><span>2 proyek</span></div><div class="bar" style="width:100%" data-value="2">2</div></div><div class="bar-row"><div class="bar-label"><span>UI/UX</span><span>1 proyek</span></div><div class="bar" style="width:50%" data-value="1">1</div></div></div></div><p class="report-note">Angka merangkum empat studi konsep di halaman ini. Proyek contoh untuk memperlihatkan arah visual, bukan pekerjaan klien.</p></div></section><section class="section" id="karya"><div class="wrap"><div class="section-top"><div><div class="eyebrow" style="margin-bottom:18px">01 / Pilihan karya</div><h2>Ruang untuk ide<br>menjadi nyata.</h2></div><p>Eksplorasi website, identitas visual, dan produk digital. Semua karya di bawah adalah contoh konsep.</p></div><div class="filters" aria-label="Filter karya"><button class="filter" data-filter="all" aria-pressed="true">Semua karya</button><button class="filter" data-filter="web" aria-pressed="false">Website</button><button class="filter" data-filter="brand" aria-pressed="false">Branding</button><button class="filter" data-filter="ui" aria-pressed="false">UI/UX</button></div><div class="projects">
 <button class="project" data-category="web" data-project="0"><div class="project-head"><h3>01 — Ruang Rimbun</h3><small>Website ↗</small></div><div class="visual one"><div class="mock"><div class="mock-nav"><b>ruang rimbun</b><span>Our story &nbsp; Explore ↗</span></div><div class="mock-title">A little closer<br>to nature.</div><div class="mock-photo"></div></div></div></button>
@@ -17,4 +29,52 @@
 <section class="section" id="tentang"><div class="wrap"><div class="eyebrow" style="margin-bottom:18px">02 / Di balik karya</div><h2>Halo, aku Haikal.<br>Senang berkenalan.</h2><div class="about-grid"><div class="about-image"><img src="assets/workspace.jpg" alt="Referensi suasana ruang kerja kreatif yang terang" loading="lazy"></div><div class="about-copy"><p>Aku Haikal, desainer digital yang senang mengubah ide menjadi website dan identitas visual. Aku tertarik pada desain yang sederhana, jelas, dan punya karakter.</p><p>Pendekatanku dimulai dari memahami cerita, mengeksplorasi bentuk, lalu merapikan setiap detail hingga terasa pas.</p><div class="skills"><span>Desain website</span><span>Identitas visual</span><span>UI/UX design</span><span>Creative direction</span></div></div></div></div></section>
 <section class="section process" id="proses"><div class="wrap"><div class="eyebrow">Cara kerja / Dari cerita ke desain</div><h2 style="margin-top:20px">Tiga langkah.<br>Satu arah yang jelas.</h2><div class="process-grid"><article class="step"><div class="step-number">01</div><h3>Kenali kebutuhan.</h3><p>Mulai dari tujuan, audiens, dan cerita yang ingin disampaikan. Susun lingkup proyek sebelum menggambar.</p></article><article class="step"><div class="step-number">02</div><h3>Jelajahi bentuk.</h3><p>Uji susunan, warna, dan tipografi. Pilih arah visual yang sesuai dengan kebutuhan proyek.</p></article><article class="step"><div class="step-number">03</div><h3>Rapikan detail.</h3><p>Tinjau hasil bersama, perbaiki bagian yang belum pas, dan siapkan file untuk digunakan.</p></article></div></div></section><section class="section questions" id="pertanyaan"><div class="wrap"><div class="eyebrow">Pertanyaan umum</div><h2 style="margin-top:20px">Sebelum mulai.</h2><div class="faq"><details><summary>Desain apa yang bisa dikerjakan?</summary><p>Profil contoh Haikal berfokus pada website, identitas visual, dan UI/UX. Layanan sebenarnya dapat disesuaikan nanti.</p></details><details><summary>Berapa biaya dan lama pengerjaannya?</summary><p>Harga dan jadwal belum ditetapkan. Keduanya perlu disesuaikan dengan lingkup, jumlah halaman, dan kebutuhan proyek.</p></details><details><summary>Apakah karya ini proyek klien?</summary><p>Keempat karya adalah studi konsep sementara. Nantinya dapat diganti dengan karya Haikal dan cerita prosesnya.</p></details></div></div></section><section class="contact" id="kontak"><div class="wrap"><div class="eyebrow">03 / Mulai percakapan</div><h2>Punya ide?<br>Kita obrolin, yuk.</h2><p>Proyek baru, kolaborasi, atau sekadar bertukar pikiran. Cerita yang baik sering dimulai dari satu pesan.</p><button class="button" id="contact-button">Tulis pesan <span>↗</span></button><p class="demo-note">Portofolio Haikal · Profil dan proyek merupakan konsep sementara.</p><footer class="footer"><span>© <span id="year"></span> Haikal</span><a href="#">Kembali ke atas ↑</a><span>Foto referensi: Unsplash</span></footer></div></section></main>
 <dialog id="detail"><button class="close" aria-label="Tutup detail proyek">Tutup ×</button><div class="eyebrow">Studi konsep / Contoh karya</div><h2 id="detail-title"></h2><p id="detail-text"></p><div class="detail-tags" id="detail-tags"></div></dialog><dialog id="contact-dialog"><button class="close" aria-label="Tutup kontak">Tutup ×</button><div class="eyebrow">Kontak portofolio</div><h2>Ruang untuk<br>percakapan baru.</h2><p>Alamat kontak belum ditambahkan. Ganti bagian ini dengan email atau tautan WhatsApp milikmu agar pengunjung dapat menghubungimu.</p></dialog>
-<script>const projects=[['Ruang Rimbun','Konsep website untuk ruang yang mengajak orang lebih dekat dengan alam. Eksplorasi ini memadukan tipografi editorial, foto lanskap, dan navigasi yang sederhana.','Website · Art direction · Konsep'],['Sore Studio','Eksplorasi identitas visual dengan karakter hangat dan santai. Wordmark, warna terakota, dan komposisi sederhana menjadi dasar sistem visualnya.','Brand identity · Typography · Konsep'],['Saku','Konsep aplikasi untuk membantu pengguna mengelompokkan tujuan tabungan. Fokus desain berada pada hierarki informasi dan alur yang mudah dipahami.','UI/UX · Mobile app · Konsep'],['Temu Kreatif','Eksplorasi identitas acara kreatif yang bertumpu pada tipografi berani dan warna kontras. Sistemnya dirancang untuk poster serta materi digital.','Visual identity · Poster · Konsep']];document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));document.querySelectorAll('.project').forEach(p=>p.hidden=b.dataset.filter!=='all'&&p.dataset.category!==b.dataset.filter)}));document.querySelectorAll('[data-project]').forEach(b=>b.addEventListener('click',()=>{const p=projects[b.dataset.project];document.getElementById('detail-title').textContent=p[0];document.getElementById('detail-text').textContent=p[1];document.getElementById('detail-tags').textContent=p[2];document.getElementById('detail').showModal()}));document.querySelectorAll('dialog .close').forEach(b=>b.addEventListener('click',()=>b.closest('dialog').close()));document.querySelectorAll('dialog').forEach(d=>d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close()}}));document.getElementById('contact-button').addEventListener('click',()=>document.getElementById('contact-dialog').showModal());document.getElementById('year').textContent=new Date().getFullYear();</script></body></html>
+<script>const projects=[['Ruang Rimbun','Konsep website untuk ruang yang mengajak orang lebih dekat dengan alam. Eksplorasi ini memadukan tipografi editorial, foto lanskap, dan navigasi yang sederhana.','Website · Art direction · Konsep'],['Sore Studio','Eksplorasi identitas visual dengan karakter hangat dan santai. Wordmark, warna terakota, dan komposisi sederhana menjadi dasar sistem visualnya.','Brand identity · Typography · Konsep'],['Saku','Konsep aplikasi untuk membantu pengguna mengelompokkan tujuan tabungan. Fokus desain berada pada hierarki informasi dan alur yang mudah dipahami.','UI/UX · Mobile app · Konsep'],['Temu Kreatif','Eksplorasi identitas acara kreatif yang bertumpu pada tipografi berani dan warna kontras. Sistemnya dirancang untuk poster serta materi digital.','Visual identity · Poster · Konsep']];document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));document.querySelectorAll('.project').forEach(p=>p.hidden=b.dataset.filter!=='all'&&p.dataset.category!==b.dataset.filter)}));document.querySelectorAll('[data-project]').forEach(b=>b.addEventListener('click',()=>{const p=projects[b.dataset.project];document.getElementById('detail-title').textContent=p[0];document.getElementById('detail-text').textContent=p[1];document.getElementById('detail-tags').textContent=p[2];document.getElementById('detail').showModal()}));document.querySelectorAll('dialog .close').forEach(b=>b.addEventListener('click',()=>b.closest('dialog').close()));document.querySelectorAll('dialog').forEach(d=>d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close()}}));document.getElementById('contact-button').addEventListener('click',()=>document.getElementById('contact-dialog').showModal());document.getElementById('year').textContent=new Date().getFullYear();</script>
+<script>
+(() => {
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  if (!('IntersectionObserver' in window) || !Element.prototype.animate) return;
+  const active = new Map();
+  function slide(element, delay = 0, distance = 32) {
+    if (reduced.matches || element.hidden || element.contains(document.activeElement)) return;
+    active.get(element)?.cancel();
+    const animation = element.animate([
+      { opacity: 0, translate: `0 ${distance}px` },
+      { opacity: 1, translate: '0 0' }
+    ], { duration: 650, delay, easing: 'cubic-bezier(.22,1,.36,1)', fill: 'backwards' });
+    active.set(element, animation);
+    const clear = () => { if (active.get(element) === animation) active.delete(element); };
+    animation.onfinish = clear;
+    animation.oncancel = clear;
+  }
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      observer.unobserve(entry.target);
+      slide(entry.target, Number(entry.target.dataset.slideDelay || 0));
+    });
+  }, { threshold: .12 });
+  document.querySelectorAll('.section h2, .report-summary, .project, .about-image, .about-copy, .step, .faq details, .contact h2').forEach(element => {
+    if (element.matches('.step')) element.dataset.slideDelay = [...element.parentElement.children].indexOf(element) * 90;
+    observer.observe(element);
+  });
+  document.querySelectorAll('.filter').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('.project').forEach(project => active.get(project)?.cancel());
+      document.querySelectorAll('.project:not([hidden])').forEach((project, index) => {
+        observer.unobserve(project);
+        slide(project, index * 70, 22);
+      });
+    });
+  });
+  document.addEventListener('focusin', event => {
+    active.forEach((animation, element) => {
+      if (element.contains(event.target)) animation.cancel();
+    });
+  });
+  reduced.addEventListener('change', () => {
+    if (reduced.matches) active.forEach(animation => animation.cancel());
+  });
+})();
+</script>
+</body></html>

@@ -28,3 +28,7 @@ Edit `index.html` untuk mengubah profil, karya, warna, dan kontak. Nama mengguna
 Adaptasi Tallyhouse untuk portofolio: Google Sans, grid bergaris, blok oranye, ringkasan karya lavender, bagian sage, dan animasi bar berbasis scroll dengan fallback statis serta reduced motion.
 
 Data sementara: profesi dan bio Haikal, empat studi konsep, daftar layanan, serta proses kerja. Kontak asli, biaya, dan jadwal belum ditetapkan. Tidak ada testimoni atau kualifikasi rekaan.
+
+## Motion slides
+
+Judul, proyek, dan bagian utama masuk dengan slide ringan saat terlihat. Langkah proses muncul berurutan; filter karya dan dialog juga memiliki transisi slide. Tidak memakai library animasi. Konten tetap terlihat tanpa JavaScript, animasi dibatalkan saat fokus keyboard masuk, dan preferensi reduced motion dihormati.
