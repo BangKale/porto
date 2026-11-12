@@ -15,3 +15,7 @@ Perkenalan, pendidikan, tiga pengalaman magang, keahlian dan pengembangan diri, 
 Adaptasi Tallyhouse: Google Sans, garis grid, blok oranye, lavender, sage, dan hitam. Slide saat scroll dan dialog mendukung reduced motion dan fokus keyboard. Konten tetap terbaca tanpa JavaScript.
 
 Folder assets berisi foto referensi dari versi sebelumnya; halaman profil saat ini tidak menggunakannya.
+
+## Foto profil
+
+Foto hero dan profil menggunakan foto Haikal yang diedit untuk merapikan latar dan pencahayaan: `assets/haikal-working.png` dan `assets/haikal-profile.png`.
