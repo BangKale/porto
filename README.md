@@ -32,3 +32,7 @@ Data sementara: profesi dan bio Haikal, empat studi konsep, daftar layanan, sert
 ## Motion slides
 
 Judul, proyek, dan bagian utama masuk dengan slide ringan saat terlihat. Langkah proses muncul berurutan; filter karya dan dialog juga memiliki transisi slide. Tidak memakai library animasi. Konten tetap terlihat tanpa JavaScript, animasi dibatalkan saat fokus keyboard masuk, dan preferensi reduced motion dihormati.
+
+## Melengkapi isi
+
+Lihat [ISI-PORTOFOLIO.md](ISI-PORTOFOLIO.md) untuk daftar data yang perlu diisi. Teks halaman tidak mengklaim profesi atau pengalaman klien yang belum dikonfirmasi. Empat proyek masih ditandai sebagai contoh pratinjau.
