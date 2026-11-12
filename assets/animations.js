@@ -1,3 +1,25 @@
+/* Header: shrink when scrolled, hide on scroll down, show on scroll up, mark the active section. Runs without GSAP. */
+(() => {
+  const bar = document.querySelector('.site-header'); if (!bar) return;
+  let last = window.scrollY;
+  const update = () => {
+    const y = window.scrollY, dy = y - last;
+    bar.classList.toggle('is-scrolled', y > 20);
+    if (y < 160 || dy < -6) bar.classList.remove('is-hidden');
+    else if (dy > 6) bar.classList.add('is-hidden');
+    if (Math.abs(dy) > 6 || y < 160) last = y;
+  };
+  window.addEventListener('scroll', update, { passive: true }); update();
+  const links = [...document.querySelectorAll('.site-header nav a[href^="#"]:not(.nav-contact)')];
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return;
+      links.forEach(a => a.setAttribute('aria-current', String(a.getAttribute('href') === '#' + e.target.id)));
+    }), { rootMargin: '-45% 0px -50% 0px' });
+    links.forEach(a => { const s = document.querySelector(a.getAttribute('href')); if (s) io.observe(s); });
+  }
+})();
+
 /* GSAP 3.13 + Lenis: aggressive, replaying scroll motion. Every reveal runs again each time it re-enters the viewport. */
 (() => {
   if (!window.gsap || !window.ScrollTrigger || !window.SplitText) return;
@@ -41,6 +63,8 @@
         if (dlg) { dlg.setAttribute('data-lenis-prevent', ''); on(document.getElementById('contact-button'), 'click', () => lenis.stop()); on(dlg, 'close', () => lenis.start()); }
         cleanups.push(() => { gsap.ticker.remove(tick); lenis.destroy(); });
       }
+
+      gsap.from('.site-header .brand, .site-header nav > *', { y: -24, opacity: 0, duration: 0.9, stagger: 0.07, delay: 0.15, ease: 'expo.out' });
 
       /* Progress bar */
       gsap.to('.progress', { scaleX: 1, ease: 'none', scrollTrigger: { start: 0, end: 'max', scrub: 0.3 } });
