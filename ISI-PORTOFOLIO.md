@@ -1,39 +1,19 @@
 # Data portofolio Haikal
 
-Kirim informasi berikut untuk mengganti isi sementara. Cukup mulai dari profesi/bidang, bio singkat, satu proyek, dan kontak.
+## Sudah diisi berdasarkan informasi Haikal
+- Mahasiswa Pulp and Paper, Institut Teknologi Sains Bandung.
+- APP Group, Karawang, on-site:
+  - Intern — Paper Machine 7 On-Coating, apprenticeship, Agustus 2026–sekarang.
+  - Intern — Tissue Machine 15, internship, Juli–September 2025.
+  - Intern — Paper Machine 10, internship, Juli–September 2024.
+- Tujuan portofolio: menampilkan karya.
+- Pengembangan kemampuan: data dan web development, khususnya front-end.
+- Bio ditulis berdasarkan pendidikan, pengalaman, dan bidang yang diberikan Haikal.
 
-## Profil
-- Nama tampilan: Haikal (sudah ada).
-- Bidang atau status yang sebenarnya: misalnya pelajar, mahasiswa, web developer, desainer, fotografer.
-- Bio 2–3 kalimat: kegiatan sekarang, minat, dan tujuan portofolio.
-- Tujuan: mencari kerja, magang, freelance, atau mendokumentasikan karya.
-- Foto diri/avatar dan kota (opsional; tidak perlu alamat rumah).
+## Masih diperlukan
+- Proyek asli: nama, tujuan, kontribusi Haikal, proses, hasil, screenshot, serta tautan demo/repo bila ada.
+- Tools dan teknologi yang benar-benar digunakan untuk data dan front-end, serta contoh penerapannya.
+- Email atau media sosial yang boleh ditampilkan untuk kontak.
+- Opsional: foto/avatar, CV, tahun masuk kuliah, sertifikat.
 
-## Keahlian
-- Keahlian yang memang dikuasai dan alat yang digunakan.
-- Hindari persentase kemampuan tanpa ukuran yang jelas.
-
-## Proyek asli (mulai dari 1–3)
-Untuk setiap proyek:
-- Nama dan jenis: pribadi, tugas, tim, atau klien.
-- Masalah/tujuan proyek.
-- Peran dan kontribusi Haikal, terutama jika dikerjakan tim.
-- Alat atau teknologi.
-- Hasil dan pelajaran; angka hanya jika dapat dibuktikan.
-- Gambar/screenshot serta link demo atau repository, jika ada.
-- Pastikan materi boleh ditampilkan secara publik.
-
-## Kontak
-- Email profesional atau tautan media sosial yang ingin ditampilkan.
-- GitHub: https://github.com/BangKale (akun repo ini; konfirmasi jika ingin ditampilkan).
-- WhatsApp, LinkedIn, Instagram, CV: opsional.
-
-## Opsional
-Pendidikan, pengalaman organisasi/kerja, sertifikat, ketersediaan kolaborasi. Cantumkan hanya data yang benar dan relevan. Harga layanan tidak wajib untuk portofolio.
-
-## Isi sementara saat ini
-- Ruang Rimbun, Sore Studio, Saku, Temu Kreatif adalah contoh, bukan karya Haikal.
-- Jumlah proyek merangkum empat contoh tersebut; perbarui ketika proyek diganti.
-- Bidang desain dan proses kreatif merupakan arah konten sementara.
-- Foto ruang kerja adalah referensi Unsplash, bukan foto ruang kerja Haikal.
-- Kontak belum terhubung; tombol hanya membuka informasi status kontak.
+Empat proyek fiktif sudah dihapus. Tidak ada klaim hasil numerik, sertifikasi, atau keahlian tools yang belum diberikan. Pengalaman magang tidak menggunakan foto atau data internal perusahaan.
