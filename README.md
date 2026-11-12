@@ -8,7 +8,7 @@ Buka `index.html` di browser atau gunakan `python3 -m http.server 8000`, kemudia
 
 ## Isi
 
-Perkenalan, pendidikan, tiga pengalaman magang, keahlian dan pengembangan diri, ruang karya, serta informasi kontak. Karya asli dan kontak belum ditambahkan. Lihat [ISI-PORTOFOLIO.md](ISI-PORTOFOLIO.md) untuk data yang masih diperlukan.
+Perkenalan, pendidikan, tiga pengalaman magang, keahlian dan pengembangan diri, ruang karya, serta informasi kontak. Karya Fapong Gallery sudah ditambahkan dengan pratinjau dan tautan website. Kontak pribadi belum ditambahkan. Lihat [ISI-PORTOFOLIO.md](ISI-PORTOFOLIO.md) untuk data yang masih diperlukan.
 
 ## Desain dan motion
 

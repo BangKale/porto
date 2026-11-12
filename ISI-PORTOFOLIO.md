@@ -10,6 +10,11 @@
 - Pengembangan kemampuan: data dan web development, khususnya front-end.
 - Bio ditulis berdasarkan pendidikan, pengalaman, dan bidang yang diberikan Haikal.
 
+## Karya yang sudah ditambahkan
+- Fapong Gallery: https://www.faponggallery.com/ — website penyewaan kostum Jaipong di Karawang, dibuat oleh Haikal.
+- Pratinjau diambil dari halaman publik website; tidak memuat tab atau toolbar browser pribadi.
+- Teknologi, tanggal proyek, dan angka hasil belum diberikan, sehingga tidak dicantumkan.
+
 ## Masih diperlukan
 - Proyek asli: nama, tujuan, kontribusi Haikal, proses, hasil, screenshot, serta tautan demo/repo bila ada.
 - Tools dan teknologi yang benar-benar digunakan untuk data dan front-end, serta contoh penerapannya.
