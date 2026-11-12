@@ -18,8 +18,8 @@ Folder assets berisi foto referensi dari versi sebelumnya; halaman profil saat i
 
 ## Foto profil
 
-Foto hero menggunakan file asli dari ZIP Haikal: `assets/haikal-working-original.jpeg`, tanpa perubahan file atau filter. Crop tampilan melalui CSS berfokus pada Haikal yang duduk bersama laptop, dengan komposisi yang sama di desktop dan ponsel. Foto profil pada bagian Tentang tetap menggunakan `assets/haikal-profile.png`.
+Foto hero menggunakan file asli dari ZIP Haikal: `assets/haikal-working-original.jpeg`, tanpa perubahan file atau filter. Crop tampilan melalui CSS berfokus pada Haikal yang duduk bersama laptop, dengan komposisi yang sama di desktop dan ponsel. Foto profil pada bagian Tentang menggunakan foto asli `assets/haikal-profile-original.jpg`.
 
 ## Galeri dokumentasi
 
-Lima foto unik dari unggahan Haikal ditampilkan di galeri. Foto laptop dan selfie yang sudah terwakili tidak ditambahkan ulang. Foto galeri menggunakan hasil edit AI untuk pencahayaan dan komposisi. Foto hero asli tetap tidak disentuh. Galeri mendukung klik untuk memperbesar, tombol sebelumnya/berikutnya, tombol panah, Escape, dan reduced motion.
+Lima foto unik dari unggahan Haikal ditampilkan di galeri. Foto laptop dan selfie yang sudah terwakili tidak ditambahkan ulang. Foto galeri menggunakan file asli yang disalin tanpa perubahan byte. Crop hanya melalui bingkai CSS; lightbox menampilkan foto asli secara penuh. Tidak ada filter, retouch, atau perubahan wajah. Foto hero asli tetap tidak disentuh. Galeri mendukung klik untuk memperbesar, tombol sebelumnya/berikutnya, tombol panah, Escape, dan reduced motion.
