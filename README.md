@@ -18,4 +18,4 @@ Folder assets berisi foto referensi dari versi sebelumnya; halaman profil saat i
 
 ## Foto profil
 
-Foto hero dan profil menggunakan foto Haikal yang diedit untuk merapikan latar dan pencahayaan: `assets/haikal-working.png` dan `assets/haikal-profile.png`.
+Foto hero menggunakan file asli dari ZIP Haikal: `assets/haikal-working-original.jpeg`, tanpa perubahan isi, filter, atau crop tambahan. Foto profil pada bagian Tentang tetap menggunakan `assets/haikal-profile.png`.
