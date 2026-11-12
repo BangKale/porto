@@ -20,6 +20,9 @@ Folder assets berisi foto referensi dari versi sebelumnya; halaman profil saat i
 
 Foto hero menggunakan file asli dari ZIP Haikal: `assets/haikal-working-original.jpeg`, tanpa perubahan file atau filter. Crop tampilan melalui CSS berfokus pada Haikal yang duduk bersama laptop, dengan komposisi yang sama di desktop dan ponsel. Foto profil pada bagian Tentang menggunakan foto asli `assets/haikal-profile-original.jpg`.
 
-## Galeri dokumentasi
 
-Lima foto unik dari unggahan Haikal ditampilkan di galeri. Foto laptop dan selfie yang sudah terwakili tidak ditambahkan ulang. Foto galeri menggunakan file asli yang disalin tanpa perubahan byte. Crop hanya melalui bingkai CSS; lightbox menampilkan foto asli secara penuh. Tidak ada filter, retouch, atau perubahan wajah. Foto hero asli tetap tidak disentuh. Galeri mendukung klik untuk memperbesar, tombol sebelumnya/berikutnya, tombol panah, Escape, dan reduced motion.
+## Animasi GSAP
+
+Galeri dokumentasi tambahan dihapus sesuai permintaan. Animasi memakai GSAP 3.13.0 asli, SplitText, dan ScrollTrigger yang disimpan lokal di `assets/vendor/gsap` (header lisensi vendor dipertahankan). Implementasi ada di `assets/animations.js`.
+
+SplitText mengatur entrance judul hero; timeline mengatur stagger konten; ScrollTrigger mengatur reveal bagian halaman dan pratinjau proyek. Hover ringan hanya aktif pada pointer yang mendukung hover. `gsap.matchMedia` menghormati reduced motion dan breakpoint, mengembalikan styles serta membersihkan instance saat kondisi berubah. Listener dan SplitText dibersihkan saat pagehide; pageshow dari back-forward cache menginisialisasi ulang. Konten tetap terbaca jika JavaScript atau GSAP gagal dimuat.
