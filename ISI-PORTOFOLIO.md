@@ -11,6 +11,7 @@
 - Bio ditulis berdasarkan pendidikan, pengalaman, dan bidang yang diberikan Haikal.
 
 ## Karya yang sudah ditambahkan
+- Rewinder Training Simulator: https://rewinderkaleee.vercel.app/ — website pengenalan proses rewinding dan simulator interaktif, dibuat oleh Haikal.
 - Fapong Gallery: https://www.faponggallery.com/ — website penyewaan kostum Jaipong di Karawang, dibuat oleh Haikal.
 - Pratinjau diambil dari halaman publik website; tidak memuat tab atau toolbar browser pribadi.
 - Teknologi, tanggal proyek, dan angka hasil belum diberikan, sehingga tidak dicantumkan.
