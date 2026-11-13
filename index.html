@@ -36,7 +36,7 @@
 
 /* Shared photo frames; fully visible when motion is disabled or unavailable. */
 .portrait-main,.portrait-about,.work-preview{--frame-offset:12px;--frame-opacity:1;border:1px solid var(--line);box-shadow:var(--frame-offset) var(--frame-offset) 0 rgba(254,113,65,var(--frame-opacity))}
-.portrait-about{width:calc(100% - 12px);margin-left:12px;margin-bottom:44px;box-shadow:calc(0px - var(--frame-offset)) 0 0 rgba(254,113,65,var(--frame-opacity))}
+.portrait-about{width:calc(100% - 12px);margin-left:12px;margin-bottom:44px;box-shadow:calc(0px - var(--frame-offset)) var(--frame-offset) 0 rgba(254,113,65,var(--frame-opacity))}
 .work-preview{width:calc(100% - 12px);margin-bottom:12px}
 .portrait-about img{transition:none;transform:none}.portrait-about:hover img{transform:none}
 @media(max-width:600px){.portrait-about{width:calc(100% - 12px)}}
