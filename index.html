@@ -34,6 +34,13 @@
 @media(max-width:900px) and (min-width:601px){.portrait-main{padding:0;box-shadow:10px 10px 0 var(--accent);margin-right:10px;width:calc(100% - 10px)}}
 @media(max-width:600px){.portrait-main{width:calc(100% - 12px);max-width:340px;margin:8px auto 12px;padding:0;box-shadow:12px 12px 0 var(--accent);aspect-ratio:auto}}
 
+/* Shared photo frames; fully visible when motion is disabled or unavailable. */
+.portrait-main,.portrait-about,.work-preview{--frame-offset:12px;--frame-opacity:1;border:1px solid var(--line);box-shadow:var(--frame-offset) var(--frame-offset) 0 rgba(254,113,65,var(--frame-opacity))}
+.portrait-about{width:calc(100% - 12px);margin-bottom:44px}
+.work-preview{width:calc(100% - 12px);margin-bottom:12px}
+.portrait-about img{transition:none;transform:none}.portrait-about:hover img{transform:none}
+@media(max-width:600px){.portrait-about{width:calc(100% - 12px)}}
+
 
 .music{position:fixed;right:max(20px,env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:15;display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#fff;border:1px solid var(--ink);border-radius:99px;padding:12px 18px;font-size:13px;cursor:pointer;box-shadow:0 8px 24px #203a2e33;transition:transform .2s,background .2s}
 .music:hover{background:#36563d;transform:translateY(-2px)}

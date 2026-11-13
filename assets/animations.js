@@ -75,7 +75,7 @@
       const hero = gsap.timeline({ defaults: { ease: 'power3.out' } })
         .from(h1.chars, { yPercent: 130, rotate: 10, opacity: 0, duration: 1.1, stagger: 0.03, ease: 'expo.out' })
         .from(['.hero .eyebrow', '.hero .intro', '.hero-art', '.hero-bottom'], { y: dist, opacity: 0, duration: 0.9, stagger: 0.1 }, 0.25)
-        .from('.portrait-main', { clipPath: 'inset(100% 0 0 0)', duration: 1.5, ease: 'expo.inOut' }, 0.1);
+        .from('.portrait-main', { opacity: 0, duration: 1.2, ease: 'power2.out' }, 0.2);
       // Replay only the headline letters when you come back to the very top; the intro text is never touched again.
       ScrollTrigger.create({ trigger: '.hero', start: 'top -80px', onLeaveBack: () => gsap.fromTo(h1.chars, { yPercent: 110, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 0.9, stagger: 0.02, ease: 'expo.out', overwrite: 'auto' }) });
       const exit = { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true };
@@ -96,13 +96,21 @@
       heading('tentang', (s, h) => gsap.from(s.words, { opacity: 0, filter: 'blur(18px)', scale: 1.35, duration: 1.2, stagger: 0.08, ease: 'power2.out', scrollTrigger: st(h, { start: 'top 90%' }) }));
       const pa = document.querySelector('.portrait-about');
       if (pa) {
-        gsap.fromTo(pa, { clipPath: 'circle(0% at 50% 50%)' }, { clipPath: 'circle(80% at 50% 50%)', duration: 1.6, ease: 'expo.out', scrollTrigger: st(pa, { start: 'top 85%' }) });
-        gsap.fromTo('.portrait-about img', { scale: 1.4, yPercent: -9 }, { scale: 1, yPercent: 9, ease: 'none', scrollTrigger: scrub(pa) });
+        gsap.from(pa, { opacity: 0, y: 28, duration: 1.1, ease: 'power3.out', scrollTrigger: st(pa, { start: 'top 88%' }) });
       }
       $('.education > :not(.portrait-about)').forEach(el => gsap.from(el, { opacity: 0, filter: 'blur(10px)', y: 24, duration: 1, scrollTrigger: st(el) }));
       $('.about-copy p').forEach(p => {
         const sp = SplitText.create(p, { type: 'words', aria: 'auto' }); splits.push(sp);
         gsap.from(sp.words, { opacity: 0.1, stagger: 0.06, ease: 'none', scrollTrigger: { trigger: p, start: 'top 82%', end: 'bottom 48%', scrub: true } });
+      });
+
+      /* Frame accents emerge together with each photograph. Context owns cleanup. */
+      $('.portrait-main, .portrait-about, .work-preview').forEach(frame => {
+        gsap.fromTo(frame, { '--frame-offset': '0px', '--frame-opacity': 0 }, {
+          '--frame-offset': '12px', '--frame-opacity': 1,
+          duration: 1.15, delay: 0.2, ease: 'power3.out',
+          scrollTrigger: st(frame, { start: 'top 88%' })
+        });
       });
 
       /* PENGALAMAN: 3D card flips up from the floor, one after another */
@@ -127,7 +135,7 @@
       $('.featured-work').forEach(w => {
         const prev = w.querySelector('.work-preview'), img = prev.querySelector('img'), copy = w.querySelector('.featured-copy');
         gsap.fromTo(prev, { rotateX: 22, scale: 0.86, transformPerspective: 1200, transformOrigin: '50% 100%' }, { rotateX: -10, scale: 1, ease: 'none', scrollTrigger: scrub(prev) });
-        gsap.fromTo(prev, { clipPath: 'polygon(0 0,0 0,0 100%,0 100%)' }, { clipPath: 'polygon(0 0,100% 0,100% 100%,0 100%)', duration: 1.4, ease: 'expo.inOut', scrollTrigger: st(prev, { start: 'top 88%' }) });
+        gsap.from(prev, { opacity: 0, duration: 1.1, ease: 'power2.out', scrollTrigger: st(prev, { start: 'top 88%' }) });
         gsap.fromTo(img, { scale: 1.3, yPercent: -10 }, { scale: 1.03, yPercent: 10, ease: 'none', scrollTrigger: scrub(prev) });
         gsap.from(copy.children, { y: 40, opacity: 0, duration: 1, stagger: 0.1, ease: 'power3.out', scrollTrigger: st(copy, { start: 'top 85%' }) });
       });
